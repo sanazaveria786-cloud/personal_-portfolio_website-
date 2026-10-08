@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f7fa;
+
+    color: #222222;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #111827;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 60px 20px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+section h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+/* HOME */
+
+#home {
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+
+#home h1 {
+    font-size: 48px;
+
+    margin-bottom: 10px;
+}
+
+
+#home h2 {
+    font-size: 24px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+
+#home p {
+    font-size: 18px;
+
+    max-width: 700px;
+
+    margin: 20px auto;
+
+    line-height: 1.6;
+}
+
+
+#home img {
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-top: 30px;
+}
+
+
+/* BUTTONS */
+
+button {
+    padding: 12px 24px;
+
+    background-color: #111827;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: #374151;
+}
+
+
+/* PROJECT GRID */
+
+.projects-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.project-card {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* FORMS */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: 600px;
+
+    gap: 10px;
+}
+
+
+input,
+textarea {
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* ADMIN CARDS */
+
+.admin-card {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* SMALL NOTE */
+
+.note {
+    font-size: 14px;
+
+    color: #666666;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #111827;
+
+    color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #home h1 {
+        font-size: 34px;
+    }
+
+}
